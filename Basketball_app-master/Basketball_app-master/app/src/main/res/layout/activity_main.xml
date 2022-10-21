@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--so this task can be done in so many ways as a design-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="match_parent"
+     android:layout_width="match_parent">
+
+    <LinearLayout
+        android:id="@+id/view1"
+        android:layout_width="204dp"
+        android:layout_height="450dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Team A"
+            android:textAlignment="center"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/teamscorea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/points3a"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+
+            android:text="+3 POINTS" />
+
+        <Button
+            android:id="@+id/points2a"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="+2 POINTS" />
+
+        <Button
+            android:id="@+id/freethrowA"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Free Throw" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="2dp"
+        android:layout_height="450dp"
+        android:layout_toEndOf="@id/view1"
+        android:background="@android:color/black" />
+
+
+    <LinearLayout
+        android:id="@+id/view2"
+        android:layout_width="204dp"
+        android:layout_height="450dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Team B"
+            android:textAlignment="center"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/teamscoreb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/points3b"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="+3 POINTS" />
+
+        <Button
+            android:id="@+id/points2b"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="+2 POINTS" />
+
+        <Button
+            android:id="@+id/freethrowB"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="free throw" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/resetbutton"
+        android:layout_width="141dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/view"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="135dp"
+        android:text="Reset" />
+</RelativeLayout>
